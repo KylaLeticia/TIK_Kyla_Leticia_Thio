@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std; 
+
+int main(){
+    /*
+    jika nilai >= 90 maka lulus sangat memusakan
+    jika nilai >= 80 lulus memusakan
+    jika nilai >= 75 cukup
+    tidak boleh > 100
+    tidak boleh < 0
+    < 75 tidak lulus
+    */
+    int nilai;
+    cout<<"Masukkan Nilai = "; cin>>nilai;
+    if (nilai > 100 || nilai <0){
+        cout<<"di luar jangkauan";
+    }
+    else if (nilai >= 90) {
+        cout<<"Lulus sangat memuaskan";
+    }
+    else if (nilai >= 80) {
+        cout<<"Lulus memuaskan";
+    }
+    else if (nilai >= 75) {
+        cout<<"cukup";
+    }
+    else {
+        cout<<"tidak lulus";
+    }
